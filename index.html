@@ -10,28 +10,33 @@
 </head>
 <body>
 
+  <button id="lang-toggle" aria-label="Cambiar idioma / Switch language">
+    <i class="fas fa-globe"></i>
+    <span id="lang-label">EN</span>
+  </button>
+
   <nav id="navbar">
     <a href="#hero" class="nav-logo">
       <i class="fas fa-microchip"></i>
       Colombia 5.0
     </a>
     <ul class="nav-links" id="nav-links">
-      <li><a href="#intro">Intro</a></li>
-      <li><a href="#ciberseguridad">Ciberseguridad</a></li>
-      <li><a href="#laboral">Laboral</a></li>
-      <li><a href="#gamer">Gamer</a></li>
-      <li><a href="#futbol">Fútbol</a></li>
-      <li><a href="#conclusion">Conclusión</a></li>
-      <li><a href="#ingles">Ingles</a></li>
+      <li><a href="#intro"><span data-lang="es">Intro</span><span data-lang="en">Intro</span></a></li>
+      <li><a href="#ciberseguridad"><span data-lang="es">Ciberseguridad</span><span data-lang="en">Cybersecurity</span></a></li>
+      <li><a href="#laboral"><span data-lang="es">Laboral</span><span data-lang="en">Jobs</span></a></li>
+      <li><a href="#gamer"><span data-lang="es">Gamer</span><span data-lang="en">Gaming</span></a></li>
+      <li><a href="#futbol"><span data-lang="es">Fútbol</span><span data-lang="en">Football</span></a></li>
+      <li><a href="#conclusion"><span data-lang="es">Conclusión</span><span data-lang="en">Conclusion</span></a></li>
+      <li><a href="#ingles"><span data-lang="es">Inglés</span><span data-lang="en">English</span></a></li>
     </ul>
     <button class="menu-toggle" id="menu-toggle" aria-label="Menú">
       <i class="fas fa-bars"></i>
     </button>
   </nav>
 
+  <!-- ── HERO ── -->
   <section id="hero">
     <div class="hero-bg"></div>
-
     <div class="particles" id="particles"></div>
 
     <div class="hero-content">
@@ -40,30 +45,35 @@
         Corferias · Bogotá · Colombia
       </div>
 
-      <h1>Mi Experiencia en<br /><span>Colombia 5.0</span></h1>
+      <h1>
+        <span data-lang="es">Mi Experiencia en<br /><span>Colombia 5.0</span></span>
+        <span data-lang="en">My Experience at<br /><span>Colombia 5.0</span></span>
+      </h1>
 
       <p class="hero-sub">
-        un viajecito hacia colferias
+        <span data-lang="es">Un viaje hacia Corferias</span>
+        <span data-lang="en">A trip to Corferias</span>
       </p>
 
       <a href="#intro" class="hero-cta">
         <i class="fas fa-play"></i>
-        Explorar experiencia
+        <span data-lang="es">Explorar experiencia</span>
+        <span data-lang="en">Explore experience</span>
       </a>
     </div>
 
     <div class="hero-stats">
       <div class="stat-item">
         <div class="stat-num">4</div>
-        <div class="stat-label">Experiencias</div>
+        <div class="stat-label"><span data-lang="es">Experiencias</span><span data-lang="en">Experiences</span></div>
       </div>
       <div class="stat-item">
         <div class="stat-num">100%</div>
-        <div class="stat-label">Aprendizaje</div>
+        <div class="stat-label"><span data-lang="es">Aprendizaje</span><span data-lang="en">Learning</span></div>
       </div>
       <div class="stat-item">
         <div class="stat-num">5.0</div>
-        <div class="stat-label">Evento</div>
+        <div class="stat-label"><span data-lang="es">Evento</span><span data-lang="en">Event</span></div>
       </div>
     </div>
 
@@ -73,28 +83,57 @@
     </div>
   </section>
 
+  <!-- ── INTRO ── -->
   <section id="intro">
     <div class="section-inner">
       <div class="intro-grid">
-        <img src="media/fondo.jpeg" width="500" height="540" ="iguana">
+        <img src="media/fondo.jpeg" width="500" height="540" alt="Colombia 5.0 Fondo" />
+
         <div class="intro-text reveal-left">
-          <p class="section-label">Introducción</p>
-          <h2>¿Qué es Colombia <span style="color:var(--cyan)">5.0</span>?</h2>
-          <p>
-            Tuve la increíble oportunidad de asistir a <strong>Colombia 5.0</strong>, uno de los eventos más importantes
-            relacionados con tecnología, innovación y transformación digital en Colombia, celebrado en
-            <strong>Corferias, Bogotá</strong>.
+          <p class="section-label">
+            <span data-lang="es">Introducción</span>
+            <span data-lang="en">Introduction</span>
           </p>
-          <p>
-            Este evento reunió a empresas líderes, startups emergentes, expertos en ciberseguridad,
-            desarrolladores de software y entusiastas de la tecnología en un solo espacio, creando
-            un ecosistema de conocimiento y networking único en el país.
-          </p>
-          <p>
-            Fue una experiencia que combinó aprendizaje técnico, oportunidades laborales y actividades
-            recreativas, todo en el contexto de la <strong>era digital y el futuro tecnológico</strong> de Colombia.
-          </p>
+          <h2>
+            ¿<span data-lang="es">Qué es</span><span data-lang="en">What is</span>
+            Colombia <span style="color:var(--cyan)">5.0</span>?
+          </h2>
+
+          <div data-lang="es">
+            <p>
+              Tuve la increíble oportunidad de asistir a <strong>Colombia 5.0</strong>, uno de los eventos más importantes
+              relacionados con tecnología, innovación y transformación digital en Colombia, celebrado en
+              <strong>Corferias, Bogotá</strong>.
+            </p>
+            <p>
+              Este evento reunió a empresas líderes, startups emergentes, expertos en ciberseguridad,
+              desarrolladores de software y entusiastas de la tecnología en un solo espacio, creando
+              un ecosistema de conocimiento y networking único en el país.
+            </p>
+            <p>
+              Fue una experiencia que combinó aprendizaje técnico, oportunidades laborales y actividades
+              recreativas, todo en el contexto de la <strong>era digital y el futuro tecnológico</strong> de Colombia.
+            </p>
+          </div>
+
+          <div data-lang="en">
+            <p>
+              I had the incredible opportunity to attend <strong>Colombia 5.0</strong>, one of the most important events
+              related to technology, innovation, and digital transformation in Colombia, held at
+              <strong>Corferias, Bogotá</strong>.
+            </p>
+            <p>
+              This event brought together leading companies, emerging startups, cybersecurity experts,
+              software developers, and technology enthusiasts in one space, creating a unique knowledge
+              and networking ecosystem in the country.
+            </p>
+            <p>
+              It was an experience that combined technical learning, job opportunities, and recreational
+              activities, all within the context of <strong>the digital era and the technological future</strong> of Colombia.
+            </p>
+          </div>
         </div>
+
         <div class="intro-visual reveal-right">
           <div class="hex-container">
             <div class="hex-ring"></div>
@@ -109,224 +148,444 @@
     </div>
   </section>
 
+  <!-- ── FOUR EXPERIENCES SUMMARY ── -->
   <section id="experiences">
     <div class="section-inner">
       <div class="section-header reveal">
-        <p class="section-label">Resumen</p>
-        <h2>Las Cuatro Experiencias</h2>
-        <p class="section-desc">Cada momento en Colombia 5.0 dejó una huella de conocimiento, diversión y motivación.</p>
+        <p class="section-label">
+          <span data-lang="es">Resumen</span>
+          <span data-lang="en">Summary</span>
+        </p>
+        <h2>
+          <span data-lang="es">Las Cuatro Experiencias</span>
+          <span data-lang="en">The Four Experiences</span>
+        </h2>
+        <p class="section-desc">
+          <span data-lang="es">Cada momento en Colombia 5.0 dejó una huella de conocimiento, diversión y motivación.</span>
+          <span data-lang="en">Every moment at Colombia 5.0 left a mark of knowledge, fun, and motivation.</span>
+        </p>
       </div>
+
       <div class="exp-grid">
         <div class="exp-card card-cyber reveal delay-1">
           <div class="card-icon"><i class="fas fa-shield-halved"></i></div>
-          <h3>Ciberseguridad</h3>
-          <p>Aprendizaje sobre protección de datos, contraseñas seguras y buenas prácticas digitales.</p>
+          <h3><span data-lang="es">Ciberseguridad</span><span data-lang="en">Cybersecurity</span></h3>
+          <p>
+            <span data-lang="es">Aprendizaje sobre protección de datos, contraseñas seguras y buenas prácticas digitales.</span>
+            <span data-lang="en">Learning about data protection, strong passwords, and good digital practices.</span>
+          </p>
         </div>
         <div class="exp-card card-work reveal delay-2">
           <div class="card-icon"><i class="fas fa-briefcase"></i></div>
-          <h3>Oportunidades Laborales</h3>
-          <p>Contacto con empresas tecnológicas y descubrimiento de las habilidades más demandadas.</p>
+          <h3><span data-lang="es">Oportunidades Laborales</span><span data-lang="en">Job Opportunities</span></h3>
+          <p>
+            <span data-lang="es">Contacto con empresas tecnológicas y descubrimiento de las habilidades más demandadas.</span>
+            <span data-lang="en">Contact with tech companies and discovery of the most in-demand skills.</span>
+          </p>
         </div>
         <div class="exp-card card-gaming reveal delay-3">
           <div class="card-icon"><i class="fas fa-gamepad"></i></div>
-          <h3>Experiencia Gamer</h3>
-          <p>Competencia gaming en un ambiente tecnológico vibrante, entre retos y diversión.</p>
+          <h3><span data-lang="es">Experiencia Gamer</span><span data-lang="en">Gaming Experience</span></h3>
+          <p>
+            <span data-lang="es">Competencia gaming en un ambiente tecnológico vibrante, entre retos y diversión.</span>
+            <span data-lang="en">Gaming competition in a vibrant tech environment, full of challenges and fun.</span>
+          </p>
         </div>
         <div class="exp-card card-futbol reveal delay-4">
           <div class="card-icon"><i class="fas fa-futbol"></i></div>
-          <h3>Fútbol Tenis</h3>
-          <p>Actividad recreativa de fútbol tenis fomentando el trabajo en equipo y la convivencia.</p>
+          <h3><span data-lang="es">Fútbol Tenis</span><span data-lang="en">Football Tennis</span></h3>
+          <p>
+            <span data-lang="es">Actividad recreativa de fútbol tenis fomentando el trabajo en equipo y la convivencia.</span>
+            <span data-lang="en">A recreational football tennis activity promoting teamwork and coexistence.</span>
+          </p>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- ── 01 CIBERSEGURIDAD ── -->
   <div class="detail-section" id="ciberseguridad">
     <div class="detail-inner">
-      <img src="media/caida.jpeg" width="500" ="iguana">
+      <img src="media/caida.jpeg" width="500" alt="Conferencia de Ciberseguridad" />
+
       <div class="detail-meta reveal-left">
         <div class="detail-num">01</div>
-        <div class="detail-badge"><i class="fas fa-shield-halved"></i> Ciberseguridad</div>
-        <h2>Protegiendo el Mundo Digital</h2>
+        <div class="detail-badge">
+          <i class="fas fa-shield-halved"></i>
+          <span data-lang="es">Ciberseguridad</span>
+          <span data-lang="en">Cybersecurity</span>
+        </div>
+        <h2>
+          <span data-lang="es">Protegiendo el Mundo Digital</span>
+          <span data-lang="en">Protecting the Digital World</span>
+        </h2>
         <p class="section-desc">
-          En Colombia 5.0 descubrí la importancia crítica de la ciberseguridad en nuestra vida diaria y en el
-          entorno empresarial moderno ya que en esta conferencia me pudieron esplicar paso a paso la importancia de la seguridad de cada usuario y como es de necesario a nosotros los desarrolladores de software en esta rama tan delicada.
+          <span data-lang="es">
+            En Colombia 5.0 descubrí la importancia crítica de la ciberseguridad en nuestra vida diaria y en el
+            entorno empresarial moderno. En esta conferencia me explicaron paso a paso la importancia de la seguridad
+            de cada usuario y cómo es de necesario para nosotros los desarrolladores de software en esta rama tan delicada.
+          </span>
+          <span data-lang="en">
+            At Colombia 5.0 I discovered the critical importance of cybersecurity in our daily lives and in the modern
+            business environment. In this conference, they explained step by step the importance of user security and
+            how essential it is for us as software developers in this very delicate field.
+          </span>
         </p>
         <div class="topic-list" style="margin-top:1.5rem;">
-          <span class="topic-pill"><i class="fas fa-database"></i> Protección de datos</span>
-          <span class="topic-pill"><i class="fas fa-key"></i> Contraseñas seguras</span>
-          <span class="topic-pill"><i class="fas fa-bug"></i> Ataques informáticos</span>
-          <span class="topic-pill"><i class="fas fa-mobile-screen"></i> Seguridad digital</span>
+          <span class="topic-pill"><i class="fas fa-database"></i> <span data-lang="es">Protección de datos</span><span data-lang="en">Data protection</span></span>
+          <span class="topic-pill"><i class="fas fa-key"></i> <span data-lang="es">Contraseñas seguras</span><span data-lang="en">Strong passwords</span></span>
+          <span class="topic-pill"><i class="fas fa-bug"></i> <span data-lang="es">Ataques informáticos</span><span data-lang="en">Cyber attacks</span></span>
+          <span class="topic-pill"><i class="fas fa-mobile-screen"></i> <span data-lang="es">Seguridad digital</span><span data-lang="en">Digital security</span></span>
         </div>
       </div>
 
       <div class="detail-body reveal-right">
+        <!-- cyber.jpeg: imagen de ciberseguridad/contexto digital -->
+        <div class="section-image-row">
+          <img src="media/cyber.jpeg" alt="Ciberseguridad en Colombia 5.0" />
+          <img src ="media/certificado.jpeg" width = 500px  weith = 500px herf = "IMAGENCITA XD"> 
+        </div>
+
         <div class="info-block">
           <div class="info-icon"><i class="fas fa-database"></i></div>
           <div>
-            <h4>Protección de Datos Personales y Empresariales</h4>
-            <p>Aprendí que la información es el activo más valioso del siglo XXI. Los expertos explicaron cómo las empresas y los usuarios deben gestionar, cifrar y proteger sus datos ante amenazas internas y externas.</p>
+            <h4>
+              <span data-lang="es">Protección de Datos Personales y Empresariales</span>
+              <span data-lang="en">Personal and Business Data Protection</span>
+            </h4>
+            <p>
+              <span data-lang="es">Aprendí que la información es el activo más valioso del siglo XXI. Los expertos explicaron cómo las empresas y los usuarios deben gestionar, cifrar y proteger sus datos ante amenazas internas y externas.</span>
+              <span data-lang="en">I learned that information is the most valuable asset of the 21st century. Experts explained how companies and users must manage, encrypt, and protect their data against internal and external threats.</span>
+            </p>
           </div>
         </div>
 
         <div class="info-block">
           <div class="info-icon"><i class="fas fa-key"></i></div>
           <div>
-            <h4>Contraseñas Seguras y Gestión de Accesos</h4>
-            <p>Descubrí buenas prácticas para crear contraseñas robustas, usar gestores de contraseñas y activar la autenticación de doble factor en todas las plataformas críticas.</p>
+            <h4>
+              <span data-lang="es">Contraseñas Seguras y Gestión de Accesos</span>
+              <span data-lang="en">Strong Passwords and Access Management</span>
+            </h4>
+            <p>
+              <span data-lang="es">Descubrí buenas prácticas para crear contraseñas robustas, usar gestores de contraseñas y activar la autenticación de doble factor en todas las plataformas críticas.</span>
+              <span data-lang="en">I discovered best practices for creating strong passwords, using password managers, and enabling two-factor authentication on all critical platforms.</span>
+            </p>
           </div>
         </div>
 
         <div class="info-block">
           <div class="info-icon"><i class="fas fa-skull-crossbones"></i></div>
           <div>
-            <h4>Prevención de Ataques Informáticos</h4>
-            <p>Fui introducido al mundo del malware, phishing, ransomware y ataques de ingeniería social. Entendí cómo identificar amenazas y tomar medidas preventivas tanto a nivel personal como organizacional.</p>
+            <h4>
+              <span data-lang="es">Prevención de Ataques Informáticos</span>
+              <span data-lang="en">Preventing Cyber Attacks</span>
+            </h4>
+            <p>
+              <span data-lang="es">Fui introducido al mundo del malware, phishing, ransomware y ataques de ingeniería social. Entendí cómo identificar amenazas y tomar medidas preventivas tanto a nivel personal como organizacional.</span>
+              <span data-lang="en">I was introduced to the world of malware, phishing, ransomware, and social engineering attacks. I learned how to identify threats and take preventive measures both personally and at an organizational level.</span>
+            </p>
           </div>
         </div>
 
         <div class="info-block">
           <div class="info-icon"><i class="fas fa-mobile-screen-button"></i></div>
           <div>
-            <h4>Seguridad Digital en la Vida Cotidiana</h4>
-            <p>Comprendí que la ciberseguridad no es solo tema de empresas: cada persona debe proteger sus redes, dispositivos y comportamientos digitales para evitar vulnerabilidades en su día a día.</p>
+            <h4>
+              <span data-lang="es">Seguridad Digital en la Vida Cotidiana</span>
+              <span data-lang="en">Digital Security in Everyday Life</span>
+            </h4>
+            <p>
+              <span data-lang="es">Comprendí que la ciberseguridad no es solo tema de empresas: cada persona debe proteger sus redes, dispositivos y comportamientos digitales para evitar vulnerabilidades en su día a día.</span>
+              <span data-lang="en">I understood that cybersecurity is not just a business issue: every person must protect their networks, devices, and digital behaviors to avoid vulnerabilities in their daily life.</span>
+            </p>
           </div>
         </div>
 
         <div class="quote-block">
-          <p>"De nada sirve el conocimiento si no se aplica"</p>
-          <h6> Frase dicha por sebastian herrera :D</h6>
+          <p>"<span data-lang="es">De nada sirve el conocimiento si no se aplica</span><span data-lang="en">Knowledge is useless if it is not applied</span>"</p>
+          <h6>— Sebastián Herrera</h6>
         </div>
       </div>
     </div>
   </div>
 
+  <!-- ── 02 LABORAL ── -->
   <div class="detail-section" id="laboral">
     <div class="detail-inner reverse">
-      <img src="media/juego.jpeg" width="500" ="iguana">
+      <img src="media/juego.jpeg" width="500" alt="Oportunidades laborales en Colombia 5.0" />
       <div class="detail-meta reveal-right">
         <div class="detail-num">02</div>
         <div class="detail-badge" style="--c: rgba(124,77,255,0.08); border-color: rgba(124,77,255,0.2); color: #b388ff;">
-          <i class="fas fa-briefcase"></i> Oportunidades Laborales
+          <i class="fas fa-briefcase"></i>
+          <span data-lang="es">Oportunidades Laborales</span>
+          <span data-lang="en">Job Opportunities</span>
         </div>
-        <h2>El Futuro del Mercado Tech</h2>
+        <h2>
+          <span data-lang="es">El Futuro del Mercado Tech</span>
+          <span data-lang="en">The Future of the Tech Market</span>
+        </h2>
         <p class="section-desc">
-          Gracias a la oportunidad que tuve de ir a Corferias, aprendí que muchas empresas buscan aprendices dispuestos a comenzar su etapa productiva de inmediato. Incluso me llamaron para trabajar como comerciante bilingüe; me interesó mucho, pero por mi poco tiempo no pude aceptarlo
+          <span data-lang="es">
+            Gracias a la oportunidad que tuve de ir a Corferias, aprendí que muchas empresas buscan aprendices
+            dispuestos a comenzar su etapa productiva de inmediato. Incluso me invitaron a trabajar como comerciante
+            bilingüe, algo que me interesó mucho, pero por falta de tiempo no pude aceptarlo.
+          </span>
+          <span data-lang="en">
+            Thanks to the opportunity I had to visit Corferias, I learned that many companies are looking for
+            apprentices ready to start their productive stage immediately. I was even invited to work as a bilingual
+            sales representative, which interested me a lot, but I could not accept due to time constraints.
+          </span>
+        </p>
+
+        <!-- mientras.jpeg: vida laboral / entorno de trabajo en el evento -->
+        <div class="section-image-row" style="margin-top:1.5rem;">
+          <img src="media/mientras.jpeg" alt="Ambiente laboral Colombia 5.0" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── 03 GAMER ── -->
+  <div class="detail-section" id="gamer">
+    <div class="detail-inner">
+      <img src="media/inicio.jpeg" width="600" height="440" alt="Zona Gamer Colombia 5.0" />
+      <div class="detail-body reveal-left">
+        <div class="detail-num">03</div>
+        <div class="detail-badge" style="--c: rgba(124,77,255,0.08); border-color: rgba(124,77,255,0.2); color: #b388ff;">
+          <i class="fas fa-gamepad"></i>
+          <span data-lang="es">Zona Gamer</span>
+          <span data-lang="en">Gaming Zone</span>
+        </div>
+        <h2>
+          <span data-lang="es">El Futuro de la Creación de Videojuegos</span>
+          <span data-lang="en">The Future of Video Game Development</span>
+        </h2>
+        <p class="section-desc">
+          <span data-lang="es">
+            Gracias a esta conferencia comprendí la importancia de la colorimetría en los videojuegos, ya que influye
+            directamente en la comodidad visual de los usuarios. Asimismo, se explicó cómo el exceso de información
+            puede generar una experiencia negativa, incluso en elementos aparentemente simples de una interfaz.
+          </span>
+          <span data-lang="en">
+            Thanks to this conference I understood the importance of colorimetry in video games, since it directly
+            affects the visual comfort of users. It was also explained how information overload can create a negative
+            experience, even in seemingly simple interface elements.
+          </span>
+        </p>
+        <span class="topic-pill"><i class="fas fa-play"></i>
+          <span data-lang="es">Zona de Gamers</span>
+          <span data-lang="en">Gaming Zone</span>
+        </span>
+
+        <div class="info-block" style="margin-top:1.5rem;">
+          <div class="info-icon"><i class="fas fa-gamepad"></i></div>
+          <div>
+            <h4><span data-lang="es">Zona de Juegos</span><span data-lang="en">Game Zone</span></h4>
+            <p>
+              <span data-lang="es">
+                En la zona de juegos tuve la oportunidad de relajarme y divertirme con mis compañeros mientras
+                competíamos para ganar diferentes premios. No ganamos ninguno, nos eliminaron a la primera, pero
+                fue muy bueno para liberar un poco de tensión.
+              </span>
+              <span data-lang="en">
+                In the gaming zone I had the chance to relax and have fun with my classmates while competing for
+                different prizes. We did not win a single one — we were eliminated in the first round — but it was
+                great for releasing some stress.
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── 04 FÚTBOL TENIS ── -->
+  <div class="detail-section" id="futbol">
+    <div class="detail-inner">
+      <img src="media/fifa.jpeg" width="450" height="400" alt="Fútbol Tenis Colombia 5.0" />
+      <div class="detail-body reveal-left">
+        <div class="detail-num">04</div>
+        <div class="detail-badge" style="--c: rgba(124,77,255,0.08); border-color: rgba(124,77,255,0.2); color: #b388ff;">
+          <i class="fas fa-futbol"></i>
+          <span data-lang="es">Fútbol Tenis</span>
+          <span data-lang="en">Football Tennis</span>
+        </div>
+        <h2>
+          <span data-lang="es">Fútbol Tenis</span>
+          <span data-lang="en">Football Tennis</span>
+        </h2>
+        <img src="media/mejora.jpeg" width="400" height="400" alt="Mejora Fútbol Tenis" style="margin-top:1rem; border-radius:12px;" />
+        <p class="section-desc" style="margin-top:1rem;">
+          <span data-lang="es">
+            Una actividad recreativa que combinó deporte y compañerismo. El fútbol tenis fue una gran forma de
+            convivir con los compañeros fuera del contexto académico y tecnológico del evento.
+          </span>
+          <span data-lang="en">
+            A recreational activity that combined sport and camaraderie. Football tennis was a great way to bond
+            with classmates outside the academic and technological context of the event.
+          </span>
         </p>
       </div>
     </div>
   </div>
 
-  <div class="detail-section" id="gamer">
-    <div class="detail-inner">
-      <img src="media/inicio.jpeg" width="600" height="440" ="iguana">
-      <div class="detail-dody reveal-left">
-        <div class="detail-num">03</div>
-        <div class="detail-badge" style="--c: rgba(124,77,255,0.08); border-color: rgba(124,77,255,0.2); color: #b388ff;">
-          <i class="fas fa-briefcase"></i> Zona Gamer
-          </div>
-          <h2> El futuro de la creacion del juego</h2>
-          <p class="section-desc">
-          Gracias a esta conferencia comprendí la importancia de la colorimetría en los videojuegos, ya que influye directamente en la comodidad visual de los usuarios. Asimismo, se explicó cómo el exceso de información puede generar una experiencia negativa, incluso cuando se presenta en elementos aparentemente simples de una interfaz.</p>
-          </p>
-          <span class="topic-pill"><i class="fas fa-play"></i> Zona de gamers</span>
-        </div>
-         <div class="info-block">
-          <div class="info-icon"><i class="fas fa-play"></i></div>
-          <div>
-            <h4>zona de juegos</h4>
-            <p>En la zona de juegos fue donde tuve la oportunidad de relajarme y divertirme con mis compañeros mientras concursabamos para ganar diferentes premios ("no ganamos ninguno, y nos ganaron a la primera") pero ante todo fue bueno para liberar un poco de tension 
-
-            </div>
-        </div>
-    </div>
-  </div>
-
-
-    <div class="detail-section" id="futbol">
-    <div class="detail-inner">
-      <img src="media/fifa.jpeg" width="450" height="400" ="iguana">
-      <div class="detail-dody reveal-left">
-        <div class="detail-num">04</div>
-        <div class="detail-badge" style="--c: rgba(124,77,255,0.08); border-color: rgba(124,77,255,0.2); color: #b388ff;">
-         <img src="media/mejora.jpeg" width="400" height="400" ="iguana">
-          <i class="fas fa-briefcase"></i> Fútbol
-          </div>
-          <h2> Fútbol tenis</h2>
-          <br>
-        </div>
-    </div>
-  </div>        
+  <!-- ── 05 CONCLUSIÓN ── -->
   <div class="detail-section" id="conclusion">
     <div class="detail-inner">
-      <img src="media/yo.jpeg" width="500" height="640" ="iguana">
-      <div class="detail-dody reveal-left">
+      <img src="media/yo.jpeg" width="500" height="640" alt="Foto del evento" />
+      <div class="detail-body reveal-left">
         <div class="detail-num">05</div>
         <div class="detail-badge" style="--c: rgba(124,77,255,0.08); border-color: rgba(124,77,255,0.2); color: #b388ff;">
-          <i class="fas fa-briefcase"></i> Conclusion
-          </div>
-          <h2> conclusion</h2>
-          <p class="section-desc">
-            Gracias a esta oportunidad que tuve, pude ver un poco mas de la vida de la inteligencia artificial ademas de la cyberseguridad y como es la manera correcta de organizar nuestras paginas para que los datos de nuestros proximos clientes esten guardados y bien utilizados
-          </p>
-          <br>
-          <p>IA que utilice</p>
-          <span class="topic-pill"><i class="fas fa-play"></i> Geminis</span>
-          <span class="topic-pill"><i class="fas fa-play"></i> Chat gpt</span>
-          <span class="topic-pill"><i class="fas fa-play"></i> Claude</span>
-          <div class="info-block">
-          <div class="info-icon"><i class="fas fa-play"></i>
-            </div>
-            <h3>¿Por que las use?</h3>
-            <p>Utilice estas inteligencia artificial ya que necesitaba ayuda con la ortografia o cuando no sabia perfectamente como espresarme.
-               ademas queria mejorar algunas fotos ya que se veia de muy mala calidad o no se entendia, ademas utilice claude ya que habia partes donde no sabia como realizar y eso me frustraba y mas que todavia no me perfecciono en java script </div>
-        </p>
-        
-    </div>
-  </div>        
-            </div>
+          <i class="fas fa-flag-checkered"></i>
+          <span data-lang="es">Conclusión</span>
+          <span data-lang="en">Conclusion</span>
         </div>
+        <h2>
+          <span data-lang="es">Conclusión</span>
+          <span data-lang="en">Conclusion</span>
+        </h2>
+
+        <!-- conclucion.jpeg: imagen de cierre / conclusión del evento -->
+        <img src="media/conclucion.jpeg" alt="Conclusión Colombia 5.0" style="margin-bottom:1rem; border-radius:12px;" />
+
+        <p class="section-desc">
+          <span data-lang="es">
+            Gracias a esta oportunidad pude ver un poco más de la vida de la inteligencia artificial, además de la
+            ciberseguridad y cómo organizar correctamente nuestras páginas para que los datos de nuestros futuros
+            clientes estén guardados y bien utilizados.
+          </span>
+          <span data-lang="en">
+            Thanks to this opportunity I was able to see a bit more of the world of artificial intelligence, as well
+            as cybersecurity and how to correctly organize our web pages so that our future clients' data is safely
+            stored and properly used.
+          </span>
+        </p>
+
+        <p style="margin-top:1.5rem; font-weight:600;">
+          <span data-lang="es">IA que utilicé:</span>
+          <span data-lang="en">AI tools I used:</span>
+        </p>
+        <div style="display:flex; gap:0.6rem; flex-wrap:wrap; margin-top:0.5rem;">
+          <span class="topic-pill"><i class="fas fa-robot"></i> Gemini</span>
+          <span class="topic-pill"><i class="fas fa-robot"></i> ChatGPT</span>
+          <span class="topic-pill"><i class="fas fa-robot"></i> Claude</span>
+        </div>
+
+        <div class="info-block" style="margin-top:1.5rem;">
+          <div class="info-icon"><i class="fas fa-question-circle"></i></div>
+          <div>
+            <h4>
+              <span data-lang="es">¿Por qué las usé?</span>
+              <span data-lang="en">Why did I use them?</span>
+            </h4>
+            <p>
+              <span data-lang="es">
+                Utilicé estas inteligencias artificiales porque necesitaba ayuda con la ortografía y con la expresión
+                escrita. También quería mejorar algunas fotos que se veían de mala calidad. Además, utilicé Claude
+                porque había partes en las que no sabía cómo avanzar, especialmente en JavaScript, que aún me sigue
+                presentando retos.
+              </span>
+              <span data-lang="en">
+                I used these AI tools because I needed help with spelling and written expression. I also wanted to
+                improve some photos that were low quality. I also used Claude because there were parts where I did
+                not know how to move forward, especially in JavaScript, which still challenges me.
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
-
-      <div class="detail-section" id="ingles">
+  <!-- ── 06 INGLÉS ── -->
+  <div class="detail-section" id="ingles">
     <div class="detail-inner">
-      <img src="media/salooo.jpeg" width="350" height="440" ="iguana">
-      <div class="detail-dody reveal-left">
+      <!-- salud.jpeg: sección final / bienestar / English closing section -->
+      <img src="media/salud.jpeg" width="350" height="440" alt="English section" />
+      <div class="detail-body reveal-left">
         <div class="detail-num">06</div>
         <div class="detail-badge" style="--c: rgba(124,77,255,0.08); border-color: rgba(124,77,255,0.2); color: #b388ff;">
-          <i class="fas fa-briefcase"></i> the written
-          </div>
-          <h2> hello everybody</h2>
-          <br>
-          <br>
-          <p>First of all, I would like to say thank you for taking the time to read this, because I understand that being a teacher can be very demanding and busy. </p>
-          <p>When I visited Colferias, I thought it was going to be boring because I had not had good experiences on previous school trips. However, I was wrong. The experience was amazing, fun, and very interesting because I learned many new things, such as cybersecurity and why it is important to learn about it and pay attention to this field.</div>
-    </div>
-  </div>  
-
-  
+          <i class="fas fa-language"></i>
+          <span data-lang="es">Sección en Inglés</span>
+          <span data-lang="en">English Section</span>
         </div>
+        <h2>Hello Everybody!</h2>
+        <p class="section-desc" style="margin-top:1rem;">
+          First of all, I would like to say thank you for taking the time to read this,
+          because I understand that being a teacher can be very demanding and busy.
+        </p>
+        <p class="section-desc">
+          When I visited Corferias, I thought it was going to be boring because I had not had
+          good experiences on previous school trips. However, I was wrong. The experience was
+          amazing, fun, and very interesting because I learned many new things, such as
+          cybersecurity and why it is important to learn about it and pay attention to this field.
+        </p>
+        <p class="section-desc">
+          I also discovered job opportunities that are available for young people in the technology
+          sector, and I had a great time in the gaming zone and the football tennis activity. Overall,
+          Colombia 5.0 opened my eyes to the possibilities that technology and the digital world
+          offer for our future careers.
+        </p>
+        
+        <a href="https://res.cloudinary.com/dkamrnfvv/video/upload/v1780719044/WhatsApp_Video_2026-06-05_at_10.10.41_PM_xiouoi.mp4"
+           class="footer-video-link">
+          <i class="fas fa-video"></i>
+          <span data-lang="es">Ver Video</span>
+          <span data-lang="en">Watch Video</span>
+
+        </a>
+        
+      </div>
     </div>
   </div>
-  
-<footer>
-  <div class="footer-logo">Colombia 5.0</div>
-  
-  <div class="footer-links">
-    <a href="#intro">Intro</a>
-    <a href="#ciberseguridad">Ciberseguridad</a>
-    <a href="#laboral">Laboral</a>
-    <a href="#games">Zona de juegos</a>
-    <a href="#futbol">Futbol</a>
-    <a href="https://res.cloudinary.com/dkamrnfvv/video/upload/v1780719044/WhatsApp_Video_2026-06-05_at_10.10.41_PM_xiouoi.mp4" target="_blank">Video</a>
-  </div>
 
-  <div class="footer-line"></div>
-  <div class="footer-copy">© 2026 Desarrollado para el análisis y gestión tecnológica. All Rights Reserved.</div>
-</footer>
+  <!-- ── FOOTER ── -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">Colombia 5.0</div>
+      <div class="footer-links">
+        <a href="#intro"><span data-lang="es">Intro</span><span data-lang="en">Intro</span></a>
+        <a href="#ciberseguridad"><span data-lang="es">Ciberseguridad</span><span data-lang="en">Cybersecurity</span></a>
+        <a href="#laboral"><span data-lang="es">Laboral</span><span data-lang="en">Jobs</span></a>
+        <a href="#gamer"><span data-lang="es">Zona de Juegos</span><span data-lang="en">Gaming Zone</span></a>
+        <a href="#futbol"><span data-lang="es">Fútbol</span><span data-lang="en">Football</span></a>
+      </div>
+      <div style="margin-top:1rem;">
+        
+      </div>
+      <div class="footer-line"></div>
+      <div class="footer-copy">
+        <span data-lang="es">© 2026 Desarrollado para el análisis y gestión tecnológica. Todos los derechos reservados.</span>
+        <span data-lang="en">© 2026 Developed for technology analysis and management. All Rights Reserved.</span>
+      </div>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
+
+  <script>
+    (function () {
+      const html  = document.documentElement;
+      const btn   = document.getElementById('lang-toggle');
+      const label = document.getElementById('lang-label');
+
+      const saved = localStorage.getItem('colombia50-lang') || 'es';
+      setLang(saved);
+
+      btn.addEventListener('click', () => {
+        const next = html.lang === 'es' ? 'en' : 'es';
+        setLang(next);
+        localStorage.setItem('colombia50-lang', next);
+      });
+
+      function setLang(lang) {
+        html.lang = lang;
+        label.textContent = lang === 'es' ? 'EN' : 'ES';
+        btn.title = lang === 'es' ? 'Switch to English' : 'Cambiar a Español';
+      }
+    })();
+  </script>
+
 </body>
 </html>
